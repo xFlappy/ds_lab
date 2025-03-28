@@ -17,7 +17,7 @@ def delivery_report(err, msg):
 
 # Produce messages to a topic
 topic = 'test-topic'  # Ensure this topic exists in your Kafka instance
-messages = ['Hello Kafka', 'This is a test', 'Kafka with Python is cool!']
+messages = ['Hello World', 'This is a Kafka test', 'Is it working?']
 
 for message in messages:
     producer.produce(topic, value=message, callback=delivery_report)

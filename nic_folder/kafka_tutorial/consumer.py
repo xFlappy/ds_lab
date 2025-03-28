@@ -4,8 +4,7 @@ from confluent_kafka import Consumer, TopicPartition
 conf = {
     'bootstrap.servers': 'localhost:54785', # Broker address (in this case localhost at port 54785)
     'group.id': 'test-group',  # Consumer group
-    'auto.offset.reset': 'earliest',  # Start from the beginning of the topic
-    'enable.auto.commit': False,  # Disable auto-commit of offsets -> this means that it does not automatically start the next time from the next offset
+    'auto.offset.reset': 'earliest'  # Start from the beginning of the topic
 }
 
 # Create a Consumer instance
